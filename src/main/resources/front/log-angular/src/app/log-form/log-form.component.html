@@ -1,0 +1,38 @@
+<div class="titulo">
+    <b>Log Form</b>
+</div>
+<br>
+<form [formGroup]="log"> 
+    <div class="painelList">     
+        
+        <label>Data Hora:</label>
+        <br>
+        <input formControlName="data" type="date">
+        <br>
+
+        <label>IP:</label>
+        <br>
+        <input formControlName="ip" type="text">
+        <br>            
+    
+        <label>Request:</label>
+        <br>
+        <input formControlName="request" type="text">
+        <br>
+
+        <label>Status:</label>
+        <br>
+        <input formControlName="status" type="number">
+        <br>        
+
+        <label>User Agent:</label>
+        <br>
+        <input formControlName="userAgent" type="text" style="width:350px">
+        <br>                
+    
+    </div>
+</form>
+<br><br>
+<button (click)="voltar()" class="btn btn-primary buttonLista"><b>Voltar</b></button>
+<button (click)="salvar()" class="btn btn-primary buttonLista"><b>Salvar</b></button>
+<br>

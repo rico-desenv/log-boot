@@ -1,0 +1,42 @@
+<div class="titulo">
+    <b>Log List</b>
+</div>
+<br>
+<div class="containercenter">
+    <button [routerLink]="['/form']" class="btn btn-primary buttonLista"><b>Adicionar Log</b></button>
+
+    <button class="btn btn-primary buttonLista" (click)="file.click()"><b>Arquivo Log</b>
+    <input type="file" accept="image/*" #file style="display: none"
+           id="file"
+           (change)="fileInput($event.target.files)"></button>
+
+</div>
+<br><br>
+<div class="containercenter">
+    IP <span style="margin-right: 15px"></span><input type="text" value="IP" [(ngModel)]="ip">
+    <button (click)="filtrar()" class="btn btn-primary buttonLista"><b>Filtrar</b></button>
+</div>
+<br>
+<div class="containercenter painelList"> 
+    <table width="85%">
+        <thead  class="table table-bordered table-dark">
+            <tr class="celulaCentro">
+                <th>Data</th>
+                <th>IP</th> 
+                <th>Request</th>
+                <th>Status</th>
+                <th>Editar</th> 
+                <th>Apagar</th>
+            </tr>
+        </thead>
+            <tr *ngFor="let l of logs" class="registroLista">                
+                <td>{{l.data | customDate}}</td> 
+                <td>{{l.ip}}</td>
+                <td>{{l.request}}</td> 
+                <td>{{l.status}}</td>            
+                <td class="celulaButton celulaCentro" routerLink = "/form"
+                [queryParams] = "{data: l| json }"><mat-icon>edit</mat-icon><i class="material-icons"></i></td>
+                <td class="celulaButton celulaCentro" (click)="apagar(l)"><mat-icon>delete</mat-icon><i class="material-icons"></i></td>
+            </tr>
+    </table>
+</div>
