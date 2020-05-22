@@ -1,8 +1,7 @@
-# log-boot
  
 # Cadastro de Logs desenvolvido com Angular Typescript e Spring APi
 
-## Project title
+## log-boot
 Crud e Upload de logs
 
 ## Features
