@@ -5,7 +5,7 @@
 Crud e Upload de logs
 
 ## Features
-Listagem de registros com funcionalidades de inserção, alteração, exclusão e filtro por range de data.
+Listagem de registros com funcionalidades de inserção, alteração, exclusão e filtro por ip.
 Assim como upload de arquivo log, processado assíncrono.
 
 ## Installation
@@ -31,8 +31,9 @@ Rodar projeto via Spring Boot. ( Utiliza porta 8281 ) <br>
 No Config.properties encontra-se diretório e nome  <br>
 do arquivo a ser carregado <br>
 Na pasta \src\main\resources\front, encontra-se o projeto angular.<br>
-Executar ng serve, e no browser http://localhost:4200/logs
-No environment.ts encontra-se o endpoint da api.
+Executar ng serve, e no browser http://localhost:4200/logs  <br>
+No environment.ts encontra-se o endpoint da api <br>
+O upload grava o arquivo na pasta /log
 
 ## API Usage
 ## API Serviço Spring URL: 
