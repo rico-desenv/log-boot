@@ -21,10 +21,10 @@ Bootstrap <br>
 ### Comands
 Importar do projeto na IDE via maven.<br>
 Após instalar pacote Node ( com npm ) https://nodejs.org/en/download/ , <br>
-executar npm install -g @angular/cli.
-instalar pacotes angular 
-ng add @angular/material
-npm install bootstrap
+executar npm install -g @angular/cli. <br>
+instalar pacotes angular  <br>
+ng add @angular/material <br>
+npm install bootstrap <br>
 
 ## How to use?
 Rodar projeto via Spring Boot. ( Utiliza porta 8281 ) <br>
